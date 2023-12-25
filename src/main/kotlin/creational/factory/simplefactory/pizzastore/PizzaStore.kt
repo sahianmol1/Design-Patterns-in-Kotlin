@@ -1,5 +1,6 @@
 package creational.factory.simplefactory.pizzastore
 
+import creational.factory.PizzaType
 import creational.factory.simplefactory.pizza.Pizza
 import creational.factory.simplefactory.pizzafactory.SimplePizzaFactory
 
@@ -16,8 +17,4 @@ class PizzaStore(private val pizzaFactory: SimplePizzaFactory = SimplePizzaFacto
 
         return pizza
     }
-}
-
-enum class PizzaType {
-    VEGGIE, CHICKEN, CHEESE
 }

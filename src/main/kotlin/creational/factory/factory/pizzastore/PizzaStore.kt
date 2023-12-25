@@ -1,7 +1,7 @@
 package creational.factory.factory.pizzastore
 
+import creational.factory.PizzaType
 import creational.factory.factory.pizza.Pizza
-import creational.factory.simplefactory.pizzastore.PizzaType
 
 abstract class PizzaStore {
     fun orderPizza(pizzaType: PizzaType): Pizza {
