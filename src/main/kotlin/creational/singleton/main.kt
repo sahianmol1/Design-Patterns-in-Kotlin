@@ -1,12 +1,24 @@
 package creational.singleton
 
 fun main() {
-    val chocoBoiler = ChocolateBoiler.getInstance()
+//    val chocoBoiler = ChocolateBoiler.getInstance()
+//
+//    chocoBoiler?.fill()
+//    chocoBoiler?.boil()
+//
+//    val chocoBoiler2 = ChocolateBoiler.getInstance()
+//
+//    chocoBoiler2?.drain()
 
-    chocoBoiler?.fill()
-    chocoBoiler?.boil()
+    // Singleton with enum
 
-    val chocoBoiler2 = ChocolateBoiler.getInstance()
 
-    chocoBoiler2?.drain()
+    val chocoBoiler = ChocolateBoilerEnum.INSTANCE
+
+    chocoBoiler.fill()
+    chocoBoiler.boil()
+
+    val chocoBoiler2 = ChocolateBoilerEnum.INSTANCE
+
+    chocoBoiler2.drain()
 }
