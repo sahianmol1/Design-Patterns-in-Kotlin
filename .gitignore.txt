@@ -1,6 +1,7 @@
 .DS_Store
 .idea/shelf
 .gradle
+.idea
 /confluence/target
 /dependencies/repo
 /android.tests.dependencies
